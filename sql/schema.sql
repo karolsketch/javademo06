@@ -1,0 +1,46 @@
+-- DB = javademo06
+CREATE DATABASE IF NOT EXISTS javademo06 CHARACTER SET utf8mb4;
+USE javademo06;
+
+CREATE TABLE IF NOT EXISTS member(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(50) NOT NULL,
+  username VARCHAR(50) UNIQUE NOT NULL,
+  password VARCHAR(100) NOT NULL,
+  balance DECIMAL(10,2) NOT NULL DEFAULT 0.00
+);
+
+CREATE TABLE IF NOT EXISTS book(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  title VARCHAR(100) NOT NULL,
+  price DECIMAL(10,2) NOT NULL,
+  stock INT NOT NULL DEFAULT 0
+);
+
+CREATE TABLE IF NOT EXISTS rentlog(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  bookid INT NOT NULL,
+  action VARCHAR(10) NOT NULL,
+  time VARCHAR(40) NOT NULL,
+  FOREIGN KEY (username) REFERENCES member(username),
+  FOREIGN KEY (bookid) REFERENCES book(id)
+);
+
+CREATE TABLE IF NOT EXISTS topuplog(
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  amount DECIMAL(10,2) NOT NULL,
+  time VARCHAR(40) NOT NULL,
+  FOREIGN KEY (username) REFERENCES member(username)
+);
+
+INSERT INTO member(name, username, password, balance) VALUES
+('小明','user1','1234',100.00)
+ON DUPLICATE KEY UPDATE name=VALUES(name);
+
+INSERT INTO book(title, price, stock) VALUES
+('Java入門', 50.00, 3),
+('資料庫概論', 60.00, 2),
+('演算法圖解', 70.00, 1)
+ON DUPLICATE KEY UPDATE title=VALUES(title);
