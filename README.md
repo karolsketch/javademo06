@@ -4,7 +4,7 @@ javademo06
 
 這是一個以 **Java Swing + MySQL + Maven** 製作的桌面應用程式，  
 模擬實體租書店的「會員登入、租書、還書、儲值、匯出租借明細」完整流程。  
-本專案採用 **三層架構 (DAO / Service / Controller)**，是入門 Java 專案結構的最佳範例。
+
 
 ---
 
