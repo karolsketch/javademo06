@@ -2,7 +2,7 @@
 javademo06
 # 📘 自助租書系統 Self-Service Book Rental System (javademo06)
 
-這是一個以 **Java Swing + MySQL + Maven** 製作的桌面應用程式，  
+這是一個以 **Eclipse + MySQL + Maven** 製作的桌面應用程式，  
 模擬實體租書店的「會員登入、租書、還書、儲值、匯出租借明細」完整流程。  
 
 
