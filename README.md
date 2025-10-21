@@ -29,7 +29,7 @@ src/main/java/
 | ☕ **JDK**         | Java 17 以上                                  |
 | 🧩 **IDE**        | Eclipse 2025-09 (4.37.0)                    |
 | 🗃 **Database**   | MySQL 8.0+                                  |
-| 📦 **Build Tool** | Maven（內含 junit、mysql-connector-j、poi-ooxml） |
+| 📦 **Build Tool** | Maven（內含 mysql-connector-j、poi-ooxml） |
 
 ## 🧱 資料庫設定 Database Setup
 ```sql
