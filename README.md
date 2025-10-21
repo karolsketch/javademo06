@@ -88,6 +88,10 @@ src/main/java/controller/LoginFrame.java
 | 登入畫面 LoginFrame          | 主畫面 MainFrame          |
 | ------------------------ | ---------------------- |
 | ![login](docs/login.png) | ![main](docs/main.png) |
+<img width="320" height="188" alt="login" src="https://github.com/user-attachments/assets/a57af620-0620-4a16-9f99-60575db3a3ac" />
+<img width="320" height="193" alt="main jpg" src="https://github.com/user-attachments/assets/c2b4a153-0998-446a-9820-5e69d89dd672" />
+
+
 
 ## 🪄 功能說明 Features
 | 功能                | 說明                                        |
